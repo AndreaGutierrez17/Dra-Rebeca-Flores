@@ -293,4 +293,75 @@ body {
   border: 0;
 }
 
+/* === FIX RESPONSIVE MOBILE === */
+@media (max-width: 991.98px) {
+  /* que el hero se pegue a los lados */
+  .hero {
+    border-radius: 0;
+    margin: 0;
+    padding-inline: 0;
+  }
+
+  /* que el contenedor del hero no achique más de lo necesario */
+  .hero > .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* carrusel más bajito en cel */
+  .hero-carousel img {
+    height: 240px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* TODAS las secciones al 100% */
+  .section > .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* NAV: que no sea tan alta en móvil */
+.navbar {
+  height: 70px;
+}
+@media (max-width: 991.98px) {
+  .navbar {
+    padding-top: .35rem;
+    padding-bottom: .35rem;
+  }
+  .navbar .logo-nav {
+    width: 48px;
+  }
+  .navbar .brand-text {
+    line-height: 1;
+  }
+}
+
+/* HERO: que arranque justo debajo del menú y a todo el ancho */
+.hero {
+  padding-top: 90px; /* altura de la navbar */
+  margin: 0;
+  border-radius: 0;
+}
+
+/* en móvil que no quede como tarjetita */
+@media (max-width: 991.98px) {
+  .hero {
+    padding-top: 85px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero > .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+
 /* FIN STYLE.CSS */
