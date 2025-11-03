@@ -1,7 +1,7 @@
 :root {
   --rose: #f3a7bd;
   --rose-strong: #e685a5;
-  --gray-bg: #ededf1;
+  --gray-bg: #ededf1b1;
   --gray: #5c5f66;
   --dark: #111; /* TEXTO NEGRO */
   --white: #ffffff;
@@ -20,7 +20,7 @@ body {
   padding: 5rem 0;
 }
 .bg-soft {
-  background: #f4f2f6;
+  background: #ededf1b1;
 }
 
 /* NAV */
@@ -193,15 +193,15 @@ body {
 
 /* FOOTER */
 .footer {
-  background: #5c5f66;
-  color: #fff;
+  background: #ededf1b1;
+  color: #e817bb;
   padding: 3.5rem 0 2.5rem;
 }
 .footer-logo {
   width: 70px;
 }
 .footer-social a {
-  color: #fff;
+  color: #e817bb;
   margin: 0 .35rem;
   font-size: 1.25rem;
 }
