@@ -349,4 +349,65 @@ html, body {
   height: auto;
 }
 
+/* ============ ANTI SCROLL HORIZONTAL ============ */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+/* cualquier sección que esté haciendo tarjeta */
+.hero,
+.hero > .container,
+.hero > .container > .row {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* el carrusel es casi siempre el que se sale */
+.hero-carousel,
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  border-radius: 1.5rem;
+}
+
+/* controles del carrusel que se salen a la derecha */
+.hero-carousel .carousel-control-prev,
+.hero-carousel .carousel-control-next {
+  width: 38px;              /* más chiquitos */
+}
+.hero-carousel .carousel-control-next {
+  right: 6px;               /* métete */
+}
+.hero-carousel .carousel-control-prev {
+  left: 6px;                /* métete */
+}
+
+/* en móvil quita márgenes del container */
+@media (max-width: 576px) {
+  .container, .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .hero {
+    border-radius: 0 !important;
+  }
+  /* y vuelve a meter el contenido con padding interno */
+  .hero > .container {
+    padding: 0 1rem !important;
+  }
+}
+
+/* por si ALGUIEN puso width mayor al viewport */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 /* FIN STYLE.CSS */
