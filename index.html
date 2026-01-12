@@ -4,14 +4,32 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Dra. Rebeca Flores | Ortodoncia Premium</title>
-  <meta name="description" content="Ortodoncia premium con enfoque estético y tecnología moderna. Agenda tu cita en Google Calendar y cotiza por WhatsApp." />
-  <meta name="robots" content="index,follow" />
+ <!-- Primary SEO -->
+<title>Dra. Rebeca Flores | Especialista en Ortodoncia en Querétaro</title>
+<meta name="description" content="Clínica de ortodoncia en Querétaro especializada en brackets estéticos, alineadores invisibles y corrección dental. Agenda tu cita con la Dra. Rebeca Flores.">
+<meta name="keywords" content="ortodoncia queretaro, dra rebeca flores, brackets queretaro, alineadores invisibles, dentista queretaro, clinica dental, sonrisas, tratamiento dental">
+<meta name="author" content="Dra. Rebeca Flores">
+<meta name="robots" content="index, follow">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Dra. Rebeca Flores | Ortodoncia Premium" />
-  <meta property="og:description" content="Sonrisas premium con enfoque estético. Agenda en Google Calendar y cotiza por WhatsApp." />
-  <meta property="og:type" content="website" />
+<!-- Open Graph (Facebook, WhatsApp, etc) -->
+<meta property="og:title" content="Dra. Rebeca Flores | Ortodoncia en Querétaro">
+<meta property="og:description" content="Ortodoncia estética y funcional en Querétaro. Atención especializada con agenda digital y resultados reales.">
+<meta property="og:image" content="img/og-doctor.jpeg">
+<meta property="og:url" content="https://tudominio.com">
+<meta property="og:type" content="website">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dra. Rebeca Flores | Ortodoncia en Querétaro">
+<meta name="twitter:description" content="Especialista en ortodoncia, brackets estéticos y alineadores invisibles en Querétaro. Agenda tu cita en línea.">
+<meta name="twitter:image" content="img/og-doctor.jpeg">
+
+<!-- Local SEO -->
+<meta name="geo.region" content="MX-QUE">
+<meta name="geo.placename" content="Querétaro">
+<meta name="geo.position" content="20.5888;-100.3899">
+<meta name="ICBM" content="20.5888, -100.3899">
+
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -708,6 +726,41 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- AOS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+  link.addEventListener('click', function () {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+    if (bsCollapse) {
+      bsCollapse.hide();
+    }
+  });
+});
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Dra. Rebeca Flores",
+  "image": "https://tudominio.com/img/logo.png",
+  "url": "https://tudominio.com",
+  "telephone": "+524423382727",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Querétaro",
+    "addressRegion": "QRO",
+    "addressCountry": "MX"
+  },
+  "sameAs": [
+    "https://www.facebook.com/share/1Ah9Tnj5e5/",
+    "https://www.instagram.com/drarebeflores"
+  ]
+}
+</script>
+
+
   <!-- Custom JS -->
   <script src="script.js"></script>
 
