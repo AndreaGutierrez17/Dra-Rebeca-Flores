@@ -1,309 +1,715 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dra. Rebeca Flores | Ortodoncia & Estética Dental</title>
-  <meta name="description" content="Consultorio dental femenino en Querétaro. Ortodoncia, limpieza, blanqueamiento, odontopediatría. Agenda tu cita por WhatsApp.">
-  <!-- BOOTSTRAP -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Dra. Rebeca Flores | Ortodoncia Premium</title>
+  <meta name="description" content="Ortodoncia premium con enfoque estético y tecnología moderna. Agenda tu cita en Google Calendar y cotiza por WhatsApp." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dra. Rebeca Flores | Ortodoncia Premium" />
+  <meta property="og:description" content="Sonrisas premium con enfoque estético. Agenda en Google Calendar y cotiza por WhatsApp." />
+  <meta property="og:type" content="website" />
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- ICONOS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- AOS (animaciones) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  <!-- CSS TUYO -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <!-- REDES FLOTANTES -->
-  <div class="floating-social">
-    <a href="https://www.instagram.com/drarebeflores?igsh=YnhxbDhkZDF2aW5q" target="_blank" class="ig"><i class="bi bi-instagram"></i></a>
-    <a href="https://www.facebook.com/share/1J3UXdm5NY/" target="_blank" class="fb"><i class="bi bi-facebook"></i></a>
-    <a href="https://wa.me/524423382727" target="_blank" class="wa"><i class="bi bi-whatsapp"></i></a>
+  <!-- Top Bar -->
+  <div class="topbar d-none d-lg-block">
+    <div class="container d-flex align-items-center justify-content-between py-2">
+      <div class="d-flex gap-3 align-items-center">
+        <span class="topbar-item"><i class="bi bi-telephone-fill"></i> <a href="tel:+524423382727">+52 442 338 2727</a></span>
+        <span class="topbar-item"><i class="bi bi-geo-alt-fill"></i> Atención con cita previa</span>
+      </div>
+      <div class="d-flex gap-2 align-items-center">
+        <a class="topbar-social" href="https://www.facebook.com/share/1Ah9Tnj5e5/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a class="topbar-social" href="https://www.instagram.com/drarebeflores?igsh=YnhxbDhkZDF2aW5q" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
   </div>
 
-  <!-- BOTÓN WA FLOTANTE -->
-  <a href="https://wa.me/524423382727?text=Hola%20Dra.%20Rebeca,%20quiero%20agendar%20una%20cita" class="btn-wa" target="_blank">
-    <i class="bi bi-whatsapp"></i>
-  </a>
-
-  <!-- NAV -->
-  <nav class="navbar navbar-expand-lg fixed-top bg-white navbar-light shadow-sm">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark nav-premium sticky-top">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
-        <img src="img/logo-dra.png" alt="Logo" class="logo-nav">
-        <span class="brand-text">
-          Dra. Rebeca Flores
-          <small class="d-block text-muted" style="font-size: .65rem;">Ortodoncia & Estética Dental</small>
-        </span>
+      <a class="navbar-brand d-flex align-items-center gap-3" href="#inicio">
+        <img src="img/logo.png" alt="Logo Dra. Rebeca Flores" class="brand-logo">
+        <div class="brand-text d-none d-sm-block">
+          <div class="brand-name">Dra. Rebeca Flores</div>
+          <div class="brand-sub">Especialista en Ortodoncia</div>
+        </div>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menú">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Abrir menú">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
           <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#casos">Antes / Después</a></li>
-          <li class="nav-item"><a class="nav-link" href="#doctora">Sobre mi</a></li>
-          <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-          <li class="nav-item">
-            <a href="https://wa.me/524423382727" target="_blank" class="btn btn-rose ms-lg-2">WhatsApp</a>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-accent btn-sm px-3" href="#agenda">
+              <i class="bi bi-calendar2-check me-1"></i> Agendar cita
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- Hero -->
   <header id="inicio" class="hero">
     <div class="container">
       <div class="row align-items-center g-4">
-        <div class="col-lg-6" data-aos="fade-right">
-          <span class="hero-badge">Consultorio dental • Querétaro</span>
-          <h1>Sonrisas lindas, Dientes sanos 💗</h1>
-          <p>Ortodoncia, limpiezas, blanqueamientos y atención a niños con la <strong>Dra. Rebeca Flores</strong>. Agenda por WhatsApp, sin llamadas.</p>
-          <div class="d-flex flex-wrap gap-3 mt-3">
-            <a href="#agenda" class="btn btn-rose btn-lg"><i class="bi bi-calendar2-check me-1"></i> Agendar cita</a>
-            <a href="#casos" class="btn btn-outline-dark btn-lg">Ver resultados</a>
+        <div class="col-lg-7" data-aos="fade-up" data-aos-duration="900">
+          <div class="hero-badge">
+            <i class="bi bi-shield-check"></i>
+            Atención premium · Enfoque estético · Tratamientos personalizados
           </div>
-          <ul class="hero-list mt-4">
-            <li><i class="bi bi-check2-circle"></i> Av. Plateros 104, Col. Carreras, Querétaro</li>
-            <li><i class="bi bi-check2-circle"></i> Ortodoncia / Brackets estéticos</li>
-            <li><i class="bi bi-check2-circle"></i> Atención cálida y profesional</li>
-          </ul>
+
+          <h1 class="hero-title mt-3">
+            Ortodoncia <span class="text-accent">premium</span> para una sonrisa que se nota (y se siente).
+          </h1>
+
+          <p class="hero-lead mt-3">
+            Diagnóstico claro, opciones estéticas y un plan a tu medida.
+            Agenda en Google Calendar y cotiza por WhatsApp en menos de un minuto.
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
+            <a class="btn btn-accent btn-lg px-4" href="#agenda">
+              <i class="bi bi-calendar2-week me-2"></i> Ver agenda y reservar
+            </a>
+            <a class="btn btn-outline-light btn-lg px-4" href="#servicios">
+              <i class="bi bi-grid-3x3-gap me-2"></i> Ver servicios
+            </a>
+          </div>
+
+          <div class="hero-metrics mt-4">
+            <div class="metric">
+              <div class="metric-ico"><i class="bi bi-stars"></i></div>
+              <div>
+                <div class="metric-title">Experiencia premium</div>
+                <div class="metric-sub">Atención detallista</div>
+              </div>
+            </div>
+            <div class="metric">
+              <div class="metric-ico"><i class="bi bi-camera2"></i></div>
+              <div>
+                <div class="metric-title">Estética</div>
+                <div class="metric-sub">Resultados naturales</div>
+              </div>
+            </div>
+            <div class="metric">
+              <div class="metric-ico"><i class="bi bi-clipboard2-pulse"></i></div>
+              <div>
+                <div class="metric-title">Plan a tu medida</div>
+                <div class="metric-sub">Seguimiento puntual</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- COLUMNA CARRUSEL -->
-        <div class="col-lg-6" data-aos="fade-left">
-          <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <!-- cambia estas rutas -->
-              <div class="carousel-item active">
-                <img src="img/hero-1.jpg" class="d-block w-100 rounded-4" alt="Consultorio">
+
+        <div class="col-lg-5" data-aos="fade-left" data-aos-duration="900">
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <div class="d-flex align-items-center gap-2">
+                <div class="hero-card-icon"><i class="bi bi-gem"></i></div>
+                <div>
+                  <div class="hero-card-title">Cita + diagnóstico</div>
+                  <div class="hero-card-sub">Cotiza rápido por WhatsApp</div>
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/hero-2.jpg" class="d-block w-100 rounded-4" alt="Paciente feliz">
-              </div>
-              <div class="carousel-item">
-                <img src="img/hero-3.jpg" class="d-block w-100 rounded-4" alt="Ortodoncia">
-              </div>
-              <div class="carousel-item">
-                <img src="img/hero-4.jpg" class="d-block w-100 rounded-4" alt="Equipo dental">
-              </div>
+              <div class="hero-card-chip"><i class="bi bi-lightning-charge-fill"></i> Rápido</div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="1"></button>
-              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="2"></button>
-              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="3"></button>
-              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="4"></button>
-            </div>
+
+            <form id="whatsappForm" class="mt-3" autocomplete="on">
+              <div class="row g-2">
+                <div class="col-12">
+                  <label class="form-label">Nombre completo</label>
+                  <input class="form-control form-control-premium" name="name" required placeholder="Ej. Andrea Gutiérrez" />
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label">Servicio de interés</label>
+                  <select class="form-select form-control-premium" name="service" required>
+                    <option value="" selected disabled>Selecciona una opción</option>
+                    <option>Brackets estéticos</option>
+                    <option>Brackets metálicos</option>
+                    <option>Alineadores</option>
+                    <option>Retenedores</option>
+                    <option>Valoración / Diagnóstico</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Preferencia de día</label>
+                  <select class="form-select form-control-premium" name="dayPref" required>
+                    <option value="" selected disabled>Elige</option>
+                    <option>Lunes a viernes</option>
+                    <option>Sábado</option>
+                    <option>Me es indistinto</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Preferencia de horario</label>
+                  <select class="form-select form-control-premium" name="timePref" required>
+                    <option value="" selected disabled>Elige</option>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Me es indistinto</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label">Comentarios (opcional)</label>
+                  <textarea class="form-control form-control-premium" name="notes" rows="2" placeholder="Ej. Quiero una opción estética y discreta"></textarea>
+                </div>
+
+                <div class="col-12 d-grid mt-2">
+                  <button class="btn btn-accent btn-lg" type="submit">
+                    <i class="bi bi-whatsapp me-2"></i> Enviar a WhatsApp (autollenado)
+                  </button>
+                </div>
+
+                <div class="col-12">
+                  <p class="mini-help mb-0">
+                    Al enviar, se abrirá WhatsApp con tu mensaje listo. Para reservar, usa la agenda en la sección <a href="#agenda">Agenda</a>.
+                  </p>
+                </div>
+              </div>
+            </form>
+
           </div>
         </div>
       </div>
     </div>
+
+    <div class="hero-glow"></div>
   </header>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="section bg-soft">
+  <!-- Trust / Highlights -->
+  <section class="section section-soft">
     <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <span class="subtitle">Servicios dentales</span>
-        <h2>Todo lo que necesitas en un solo lugar</h2>
-        <p>Tratamientos con enfoque estético y materiales de calidad.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
-          <div class="service-card">
-            <div class="icon-box"><i class="bi bi-braces"></i></div>
-            <h3>Ortodoncia</h3>
-            <p>Brackets metálicos y estéticos.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-card">
-            <div class="icon-box"><i class="bi bi-emoji-smile"></i></div>
-            <h3>Blanqueamiento</h3>
-            <p>Sonrisa más blanca en pocas sesiones.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
-          <div class="service-card">
-            <div class="icon-box"><i class="bi bi-people"></i></div>
-            <h3>Niños</h3>
-            <p>Odontopediatría con trato amoroso.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-card">
-            <div class="icon-box"><i class="bi bi-hospital"></i></div>
-            <h3>Urgencias</h3>
-            <p>Dolor, Inflamacion, bracket caído.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ANTES Y DESPUÉS -->
-  <section id="casos" class="section">
-    <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <span class="subtitle">Resultados reales</span>
-        <h2>Antes y después</h2>
-        <p>Eliminación de sarro y manchas, mejora el color<code> natural de tus dientes y previene problemas de encias</code>.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6" data-aos="zoom-in">
-          <div class="before-after-card">
-            <div class="ba-label">Limpieza dental</div>
-            <div class="ba-images">
-              <div>
-                <span>Antes</span>
-                <img src="img/limpieza-1.jpg" class="img-fluid rounded" alt="Antes">
-              </div>
-              <div>
-                <span>Después</span>
-                <img src="img/limpieza-2.jpg" class="img-fluid rounded shadow-sm" alt="Después">
-              </div>
+      <div class="row g-3">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="750">
+          <div class="pill">
+            <i class="bi bi-award"></i>
+            <div>
+              <div class="pill-title">Atención premium</div>
+              <div class="pill-sub">Experiencia cuidada</div>
             </div>
-            <p class="mt-3">Limpieza profunda y devuelve el brillo natural </p>
           </div>
         </div>
-        <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
-          <div class="before-after-card">
-            <div class="ba-label">Blanqueamiento</div>
-            <div class="ba-images">
-              <div>
-                <span>Antes</span>
-                <img src="img/blancamiento-1.jpg" class="img-fluid rounded" alt="Antes">
-              </div>
-              <div>
-                <span>Después</span>
-                <img src="img/blancamiento-2.jpg" class="img-fluid rounded shadow-sm" alt="Después">
-              </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="750" data-aos-delay="80">
+          <div class="pill">
+            <i class="bi bi-brush"></i>
+            <div>
+              <div class="pill-title">Enfoque estético</div>
+              <div class="pill-sub">Resultados naturales</div>
             </div>
-            <p class="mt-3">Uniformidad de color y brillo.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-duration="750" data-aos-delay="160">
+          <div class="pill">
+            <i class="bi bi-heart-pulse"></i>
+            <div>
+              <div class="pill-title">Plan personalizado</div>
+              <div class="pill-sub">Seguimiento constante</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- DOCTORA -->
-  <section id="doctora" class="section bg-soft">
+  <!-- Servicios -->
+  <section id="servicios" class="section">
     <div class="container">
-      <div class="row g-4 align-items-center">
-        <div class="col-lg-5" data-aos="fade-right">
-          <img src="img/dra-rebeca.jpg" alt="Dra. Rebeca Flores" class="img-fluid rounded-4 shadow-sm doctor-img">
+      <div class="section-head" data-aos="fade-up">
+        <h2 class="section-title">Servicios premium</h2>
+        <p class="section-lead">Catálogo claro, estética impecable y opciones para cada objetivo.</p>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-gem"></i></div>
+            <h3 class="service-title">Brackets estéticos</h3>
+            <p class="service-text">Opción discreta con enfoque en armonía facial y sonrisa natural.</p>
+            <ul class="service-list">
+              <li><i class="bi bi-check2-circle"></i> Diseño de sonrisa</li>
+              <li><i class="bi bi-check2-circle"></i> Plan por etapas</li>
+              <li><i class="bi bi-check2-circle"></i> Seguimiento premium</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-lg-7" data-aos="fade-left">
-          <span class="subtitle">Conócela</span>
-          <h2>Dra. Rebeca Flores</h2>
-          <p class="lead">Especialista en Ortodoncia y Ortopedia. <code> Enfoque cálido, detallista y profesional</code>.</p>
-          <code> “Mi objetivo es que te sientas segura desde el momento en que entras al consultorio. Trabajo con técnicas actuales y te explico tu tratamiento paso a paso.”</code>
-          <ul class="feature-list">
-            <li><i class="bi bi-check2-circle"></i> Atención a niños, adolescentes y adultos</li>
-            <li><i class="bi bi-check2-circle"></i> Materiales de calidad</li>
-            <li><i class="bi bi-check2-circle"></i> Agendas por WhatsApp</li>
-          </ul>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-braces"></i></div>
+            <h3 class="service-title">Brackets metálicos</h3>
+            <p class="service-text">La opción clásica y efectiva, con ajustes precisos y control total.</p>
+            <ul class="service-list">
+              <li><i class="bi bi-check2-circle"></i> Corrección progresiva</li>
+              <li><i class="bi bi-check2-circle"></i> Citas programadas</li>
+              <li><i class="bi bi-check2-circle"></i> Objetivos medibles</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-magic"></i></div>
+            <h3 class="service-title">Alineadores</h3>
+            <p class="service-text">Alternativa moderna y estética para casos seleccionados.</p>
+            <ul class="service-list">
+              <li><i class="bi bi-check2-circle"></i> Estética superior</li>
+              <li><i class="bi bi-check2-circle"></i> Uso cómodo</li>
+              <li><i class="bi bi-check2-circle"></i> Planificación digital</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-shield-check"></i></div>
+            <h3 class="service-title">Retenedores</h3>
+            <p class="service-text">La fase más importante: mantener tu resultado perfecto.</p>
+            <ul class="service-list">
+              <li><i class="bi bi-check2-circle"></i> Ajuste profesional</li>
+              <li><i class="bi bi-check2-circle"></i> Revisión periódica</li>
+              <li><i class="bi bi-check2-circle"></i> Cuidado a largo plazo</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-clipboard2-pulse"></i></div>
+            <h3 class="service-title">Valoración / Diagnóstico</h3>
+            <p class="service-text">Evaluación, opciones y plan claro (sin vueltas).</p>
+            <ul class="service-list">
+              <li><i class="bi bi-check2-circle"></i> Diagnóstico y objetivos</li>
+              <li><i class="bi bi-check2-circle"></i> Recomendación estética</li>
+              <li><i class="bi bi-check2-circle"></i> Ruta de tratamiento</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="service-card service-card-accent">
+            <div class="service-icon"><i class="bi bi-calendar2-heart"></i></div>
+            <h3 class="service-title">Citas con agenda Google</h3>
+            <p class="service-text">Reservas directas con disponibilidad real. Sin mensajes eternos.</p>
+            <div class="d-grid">
+              <a class="btn btn-accent" href="#agenda">
+                <i class="bi bi-calendar2-check me-2"></i> Reservar ahora
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- AGENDA / FORMULARIO -->
-  <section id="agenda" class="section">
+  <!-- About / Doctor -->
+  <section class="section section-soft">
     <div class="container">
-      <div class="text-center mb-5" data-aos="fade-up">
-        <span class="subtitle">Agenda tu cita</span>
-        <h2>Te escribimos por WhatsApp</h2>
-        <p>Déjanos tus datos y te confirmamos.</p>
-      </div>
-      <div class="row g-4">
+      <div class="row align-items-center g-4">
         <div class="col-lg-6" data-aos="fade-right">
-          <form id="waForm" class="contact-form">
-            <div class="mb-3">
-              <label class="form-label">Nombre completo</label>
-              <input type="text" id="nombre" class="form-control" required placeholder="Tu nombre">
+          <div class="about-card">
+            <div class="about-chip"><i class="bi bi-stars"></i> Enfoque premium</div>
+            <h2 class="about-title mt-2">Atención clínica de alto nivel, diseñada para sonrisas excepcionales.</h2>
+            <p class="about-text mt-3">
+              En esta consulta cada tratamiento se diseña con precisión, estética y propósito.
+              Combinamos ortodoncia avanzada con un enfoque clínico personalizado para lograr resultados armónicos, funcionales y duraderos.
+              Tu sonrisa no se improvisa: se planifica, se ejecuta y se perfecciona.
+            </p>
+
+            <div class="about-points mt-3">
+              <div class="about-point"><i class="bi bi-check2-circle"></i> Diagnóstico con ruta de tratamiento</div>
+              <div class="about-point"><i class="bi bi-check2-circle"></i> Opciones estéticas y tradicionales</div>
+              <div class="about-point"><i class="bi bi-check2-circle"></i> Citas programadas con Google Calendar</div>
             </div>
-            <div class="mb-3">
-              <label class="form-label">Teléfono / WhatsApp</label>
-              <input type="tel" id="telefono" class="form-control" required placeholder="+52 4...">
+
+            <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
+              <a class="btn btn-accent" href="#agenda"><i class="bi bi-calendar2-check me-2"></i> Agendar</a>
+              <a class="btn btn-outline-darkish" href="#galeria"><i class="bi bi-images me-2"></i> Ver galería</a>
             </div>
-            <div class="mb-3">
-              <label class="form-label">Servicio</label>
-              <select id="servicio" class="form-select">
-                <option value="Valoración dental">Valoración dental</option>
-                <option value="Ortodoncia / Brackets">Ortodoncia / Brackets</option>
-                <option value="Limpieza dental">Limpieza dental</option>
-                <option value="Blanqueamiento">Blanqueamiento</option>
-                <option value="Niños / Odontopediatría">Niños / Odontopediatría</option>
-                <option value="Urgencia">Urgencia</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Mensaje (opcional)</label>
-              <textarea id="mensaje" rows="3" class="form-control" placeholder="Quisiera una cita el viernes..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-rose w-100">
-              <i class="bi bi-whatsapp me-1"></i> Enviar a WhatsApp
-            </button>
-          </form>
+          </div>
         </div>
-    <div class="col-lg-6" data-aos="fade-left"> 
-  <div class="contact-info-box">
-    <h3>Ubicación</h3>
-    <p><i class="bi bi-geo-alt me-2"></i> Av. Plateros 104, Col. Carreras, Querétaro, QRO, CP 76050</p>
-    <p><i class="bi bi-clock me-2"></i> L - V: 09:00 a 14:00 y 15:00 a 19:00</p>
-    <p><i class="bi bi-whatsapp me-2"></i> 
-      <a href="https://wa.me/524423382727" target="_blank">+52 442 338 2727</a>
-    </p>
-    <p><i class="bi bi-instagram me-2"></i> 
-      <a href="https://www.instagram.com/drarebeflores?igsh=YnhxbDhkZDF2aW5q" target="_blank">@drarebeflores</a>
-    </p>
 
-    <!-- Mapa Google -->
-    <div class="map-box">
-      <iframe
-        src="https://www.google.com/maps?q=Av.+Plateros+104,+Col.+Carreras,+Querétaro,+QRO,+76050&output=embed"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </div>
-</div>
-</section>
-
-  <!-- FOOTER -->
-  <footer id="contacto" class="footer">
-    <div class="container text-center">
-      <img src="img/logo-dra.png" alt="Logo" class="footer-logo mb-3">
-      <p class="mb-1">Consultorio Dental • Dra. Rebeca Flores</p>
-      <p class="mb-1">Av. Plateros 104, Col. Carreras, Querétaro</p>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/drarebeflores?igsh=YnhxbDhkZDF2aW5q" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.facebook.com/share/1J3UXdm5NY/" target="_blank"><i class="bi bi-facebook"></i></a>
-        <a href="https://wa.me/524423382727" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="about-image">
+            <!-- Cambia esta imagen por una foto premium (consultorio o doctora) -->
+            <img src="img/doctor.jpeg" alt="Consultorio / Dra. Rebeca Flores" class="img-fluid rounded-4">
+            <div class="about-badge">
+              <i class="bi bi-award-fill"></i> Especialista en Ortodoncia
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="mt-3 mb-0 text-muted">© <span id="year"></span> Dra. Rebeca Flores. Todos los derechos reservados.</p>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="section">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <h2 class="section-title">Galería</h2>
+        <p class="section-lead">Resultados reales, procesos reales y estética cuidadosamente ejecutada.</p>
+      </div>
+
+      <div class="row g-3 mt-1">
+        <!-- 6 tiles -->
+        <div class="col-6 col-lg-4" data-aos="zoom-in">
+          <a class="gallery-tile" href="img/galeria-1.jpeg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="img/galeria-1.jpeg">
+            <img src="img/galeria-1.jpeg" alt="Galería 1" class="img-fluid">
+            <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+          </a>
+        </div>
+        <div class="col-6 col-lg-4" data-aos="zoom-in" data-aos-delay="60">
+          <a class="gallery-tile" href="img/galeria 2.jpeg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="img/galeria 2.jpeg">
+            <img src="img/galeria 2.jpeg" alt="Galería 2" class="img-fluid">
+            <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+          </a>
+        </div>
+        <div class="col-6 col-lg-4" data-aos="zoom-in" data-aos-delay="120">
+          <a class="gallery-tile" href="img/galeria-3.jpeg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="img/galeria-3.jpeg">
+            <img src="img/galeria-3.jpeg" alt="Galería 3" class="img-fluid">
+            <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+          </a>
+        </div>
+        <div class="col-6 col-lg-4" data-aos="zoom-in">
+          <a class="gallery-tile" href="img/limpieza-2.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="img/limpieza-2.jpg">
+            <img src="img/limpieza-2.jpg" alt="Galería 4" class="img-fluid">
+            <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+          </a>
+        </div>
+        <div class="col-6 col-lg-4" data-aos="zoom-in" data-aos-delay="60">
+          <a class="gallery-tile" href="img/galeria-4.jpeg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="img/galeria-4.jpeg">
+            <img src="img/galeria-4.jpeg" alt="Galería 5" class="img-fluid">
+            <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+          </a>
+        </div>
+        <div class="col-6 col-lg-4" data-aos="zoom-in" data-aos-delay="120">
+          <a class="gallery-tile" href="img/galeria-5.jpeg" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="img/galeria-5.jpeg">
+            <img src="img/galeria-5.jpeg" alt="Galería 6" class="img-fluid">
+            <div class="gallery-overlay"><i class="bi bi-arrows-fullscreen"></i></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="note-box mt-4" data-aos="fade-up">
+        <div class="note-ico"><i class="bi bi-info-circle"></i></div>
+        <div>
+          <div class="note-title">Cada imagen refleja el nivel de precisión, detalle y cuidado que aplicamos en cada tratamiento.</div>
+          <div class="note-text">Desde alineación y estética dental hasta ortodoncia avanzada, esta galería muestra cómo una planificación clínica correcta se traduce en sonrisas armónicas y funcionales.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Agenda -->
+  <section id="agenda" class="section section-soft">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <h2 class="section-title">Agenda tu cita</h2>
+        <p class="section-lead">Visualiza los espacios disponibles y confirma tu cita de forma inmediata, con sincronización directa en Google Calendar.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch mt-1">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="booking-card h-100">
+            <div class="booking-head">
+              <div class="booking-icon"><i class="bi bi-calendar2-check"></i></div>
+              <div>
+                <div class="booking-title">Reservar en Google Calendar</div>
+                <div class="booking-sub">Tu cita queda registrada de inmediato en nuestra agenda clínica digital.</div>
+              </div>
+            </div>
+
+            <div class="booking-steps mt-3">
+              <div class="step"><span>1</span> Elige día y hora disponibles.</div>
+              <div class="step"><span>2</span> Confirma tu cita en Google.</div>
+              <div class="step"><span>3</span> Si quieres, envía tu cuestionario por WhatsApp.</div>
+            </div>
+
+            <!-- IMPORTANTE: reemplaza este link por tu link real de "Appointment Schedule" o tu calendario -->
+            <a class="btn btn-accent btn-lg w-100 mt-3" href="TU_LINK_DE_CITAS_GOOGLE" target="_blank" rel="noopener">
+              <i class="bi bi-box-arrow-up-right me-2"></i> Abrir agenda de Google
+            </a>
+
+            <div class="divider-soft my-4"></div>
+
+            <div class="contact-mini">
+              <div class="contact-mini-row">
+                <i class="bi bi-telephone-fill"></i>
+                <a href="tel:+524423382727">+52 442 338 2727</a>
+              </div>
+              <div class="contact-mini-row">
+                <i class="bi bi-instagram"></i>
+                <a href="https://www.instagram.com/drarebeflores?igsh=YnhxbDhkZDF2aW5q" target="_blank" rel="noopener">@drarebeflores</a>
+              </div>
+              <div class="contact-mini-row">
+                <i class="bi bi-facebook"></i>
+                <a href="https://www.facebook.com/share/1Ah9Tnj5e5/" target="_blank" rel="noopener">Dra Rebeca Flores</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="calendar-embed h-100">
+            <div class="calendar-embed-head">
+              <div class="calendar-dot"></div>
+              <div class="calendar-title">Agenda integrada</div>
+              <div class="calendar-hint">Recibe tu confirmación automática.</div>
+            </div>
+
+            <!-- IMPORTANTE:
+              Reemplaza este src por el embed real de tu "Appointment schedule" o calendario.
+              Si no lo tienes, deja el iframe y solo usa el botón de arriba.
+            -->
+            <iframe
+              title="Agenda Google Calendar"
+              src="https://calendar.google.com/calendar/embed?src=TU_CALENDARIO%40gmail.com&ctz=America%2FMexico_City"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="section">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <h2 class="section-title">Testimonios</h2>
+        <p class="section-lead">Confianza real. Satisfacción real. Resultados que se recomiendan.</p>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <div class="col-lg-4" data-aos="fade-up">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review-text">“La atención es súper profesional. Me explicaron todo con claridad y el plan quedó perfecto.”</p>
+            <div class="review-user">
+              <div class="avatar">A</div>
+              <div>
+                <div class="review-name">Paciente</div>
+                <div class="review-sub">Tratamiento estético</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review-text">“Me encantó que tienen agenda clara. Reservé fácil y el trato fue premium desde el inicio.”</p>
+            <div class="review-user">
+              <div class="avatar">M</div>
+              <div>
+                <div class="review-name">Paciente</div>
+                <div class="review-sub">Valoración</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="review-text">“Me dieron opciones estéticas y honestas. Cero presión. Todo muy bien explicado.”</p>
+            <div class="review-user">
+              <div class="avatar">R</div>
+              <div>
+                <div class="review-name">Paciente</div>
+                <div class="review-sub">Ortodoncia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section section-soft">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <p class="section-lead">Respuestas claras. Sin letra chiquita.</p>
+      </div>
+
+      <div class="row g-4 align-items-start mt-1">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="accordion accordion-premium" id="faqAcc">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f1">
+                  ¿Cómo reservo una cita?
+                </button>
+              </h2>
+              <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc">
+                <div class="accordion-body">
+                  Puedes reservar directo desde Google Calendar en la sección <b>Agenda</b>. Si deseas, también envías el cuestionario por WhatsApp.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">
+                  ¿Qué opción es más estética?
+                </button>
+              </h2>
+              <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">
+                  Depende del caso. En general, brackets estéticos o alineadores son lo más discreto. En consulta se define la mejor opción.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">
+                  ¿Cuánto dura un tratamiento?
+                </button>
+              </h2>
+              <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+                <div class="accordion-body">
+                  Varía por objetivos y complejidad. En valoración se estima el tiempo y se define el plan por etapas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="cta-box">
+            <div class="cta-title">¿Lista/o para iniciar?</div>
+            <div class="cta-text">Reserva en la agenda y, si quieres, envía tu cuestionario para agilizar la valoración.</div>
+            <div class="d-grid gap-2 mt-3">
+              <a class="btn btn-accent btn-lg" href="#agenda"><i class="bi bi-calendar2-check me-2"></i> Agendar cita</a>
+              <a class="btn btn-outline-darkish btn-lg" href="tel:+524423382727"><i class="bi bi-telephone me-2"></i> Llamar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="footer-brand d-flex align-items-center gap-3">
+            <img src="img/logo.png" alt="Logo Dra. Rebeca Flores" class="footer-logo">
+            <div>
+              <div class="footer-name">Dra. Rebeca Flores</div>
+              <div class="footer-sub">Especialista en Ortodoncia</div>
+            </div>
+          </div>
+          <p class="footer-text mt-3">
+            Ortodoncia premium con enfoque estético y planes personalizados.
+          </p>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="footer-title">Contacto</div>
+          <div class="footer-links">
+            <a href="tel:+524423382727"><i class="bi bi-telephone-fill"></i> +52 442 338 2727</a>
+            <a href="#agenda"><i class="bi bi-calendar2-check"></i> Agendar en Google</a>
+            <a href="https://www.instagram.com/drarebeflores?igsh=YnhxbDhkZDF2aW5q" target="_blank" rel="noopener"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="https://www.facebook.com/share/1Ah9Tnj5e5/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i> Facebook</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-title">Horario de atención</div>
+          <div class="footer-text">
+            Lunes a viernes: 09:00 AM - 7:00 PM<br>
+            Sábado: 09:00 AM - 2:00 PM<br>
+            Domingo: Cerrado
+          </div>
+
+          <div class="footer-mini mt-3">
+            <i class="bi bi-shield-check"></i>Atención especializada en ortodoncia.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom mt-4">
+        <div>© <span id="year"></span> Dra. Rebeca Flores. Todos los derechos reservados.</div>
+        <div class="footer-small">Cada sonrisa se atiende con precisión y cuidado.</div>
+      </div>
     </div>
   </footer>
 
-  <!-- JS BOOTSTRAP -->
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" id="waFloat" href="#" aria-label="WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Floating Social (Desktop) -->
+  <div class="social-float d-none d-lg-flex">
+    <a href="https://www.facebook.com/share/1Ah9Tnj5e5/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    <a href="https://www.instagram.com/drarebeflores?igsh=YnhxbDhkZDF2aW5q" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+    <a href="#agenda" aria-label="Agenda"><i class="bi bi-calendar2-check"></i></a>
+  </div>
+
+  <!-- Gallery Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content modal-premium">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Vista previa</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <img id="galleryModalImg" src="" alt="Imagen galería" class="img-fluid rounded-4 w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- AOS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <!-- TU JS -->
+  <!-- Custom JS -->
   <script src="script.js"></script>
+
 </body>
 </html>
