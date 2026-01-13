@@ -1,9 +1,3 @@
-/* Premium Landing - Dra. Rebeca Flores
-   - AOS init
-   - WhatsApp auto-filled questionnaire
-   - Gallery modal preview
-   - Floating WhatsApp defaults
-*/
 
 (() => {
   // AOS animations
