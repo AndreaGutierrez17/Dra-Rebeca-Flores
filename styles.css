@@ -892,3 +892,85 @@ h1,h2,h3,h4,h5,h6,
     padding: 12px 12px;
   }
 }
+
+/* =========================================================
+   BOOKING HEAD FLEX
+   ========================================================= */
+.booking-head{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* =========================================================
+   CALENDAR EMBED HEAD
+   ========================================================= */
+.calendar-embed-head{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* =========================================================
+   HOURS BADGE + TIME
+   ========================================================= */
+.hours-badge{
+  font-weight: 900;
+  color: var(--rosewood);
+  background: rgba(233,199,207,.45);
+  border: 1px solid rgba(139,76,91,.16);
+  border-radius: 999px;
+  padding: 3px 14px;
+  font-size: .86rem;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+.hours-time{
+  font-weight: 700;
+  color: rgba(60,47,51,.82);
+  font-size: .93rem;
+}
+
+/* =========================================================
+   ABOUT IMAGE + BADGE PREMIUM
+   ========================================================= */
+.about-image{
+  position: relative;
+  display: block;
+}
+.about-badge{
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, rgba(255,255,255,.96) 0%, rgba(255,247,240,.93) 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(199,146,127,.32);
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-weight: 800;
+  font-size: .9rem;
+  color: var(--rosewood);
+  letter-spacing: .02em;
+  white-space: nowrap;
+  box-shadow:
+    0 12px 32px rgba(139,76,91,.18),
+    0 2px 8px rgba(0,0,0,.06),
+    inset 0 1px 0 rgba(255,255,255,.85);
+}
+.about-badge i{
+  color: var(--rose);
+  font-size: 1.1rem;
+  filter: drop-shadow(0 2px 4px rgba(199,146,127,.35));
+}
+@media (max-width: 576px){
+  .about-badge{
+    font-size: .82rem;
+    padding: 8px 16px;
+    bottom: 12px;
+  }
+}
